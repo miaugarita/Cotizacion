@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cotizaciòn</title>
+    <link rel="stylesheet" href="../css/estilos.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@100;200&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+    <header id="Cabecera">
+        <h2 class="Encabezado">Corte 2 Practica 3</h2>
+    </header>
+
+    <h1>Cotización</h1>
+
+
+    <div id="Contenido">
+        <label for="valor">Valor del automovil</label>
+        <input type="number" name="valor" id="valor" placeholder="Introduzca un valor">
+        <br>
+        <label for="enganche">Enganche</label>
+        <input type="text" name="enganche" id="enganche" placeholder="Enganche" readonly>
+        <br>
+        <label for="totalFinanciar">Total a financiar</label>
+        <input type="text" name="totalFinanciar" id="totalFinanciar" placeholder="Total a financiar" readonly>
+        <br>
+        <label for="planCredito">Planes de credito</label>
+        <select name="planCredito" id="planCredito">
+            <option value="-1" disabled selected>Seleccione un plan de credito</option>
+            <option value="0">12 Meses</option>
+            <option value="1">18 Meses</option>
+            <option value="2">24 Meses</option>
+            <option value="3">36 Meses</option>
+            <option value="4">48 Meses</option>
+        </select>
+        <br>
+        <label for="pagoMensual">Pago Mensual</label>
+        <input type="text" name="pagoMensual" id="pagoMensual" placeholder="Pago Mensual" readonly>
+        <br>
+        <div class="botones">
+            <button class="boton" id="btnLimpiar">Limpiar</button>
+            <button class="boton" id="btnCalcular">Calcular</button>
+        </div>
+    </div>
+
+    <footer id="pieNavegacion">
+        <h3 class="pieNav">Margarita Trejo Tirado | OCUBRE 2022</h3>
+    </footer>
+    <script src="../js/script.js"></script>
+</body>
+
+</html>
