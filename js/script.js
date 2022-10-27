@@ -25,7 +25,6 @@ const calcularBtn = () => {
 			interes = 0.125;
 			meses = 12;
 			break;
-
 		case "1":
 			interes = 0.172;
 			meses = 18;
@@ -56,7 +55,8 @@ const calcularBtn = () => {
 	const enganche = document.getElementById("enganche").value;
 	document.getElementById("totalFinanciar").value = ((valor - enganche) + (valor * interes)).toFixed(2);
 	const financiar = document.getElementById("totalFinanciar").value;
-	document.getElementById("pagoMensual").value = (financiar / meses).toFixed(2);
+	//se actualizo el calculo de pago en meses
+	document.getElementById("pagoMensual").value = (valor / meses).toFixed(2);
 };
 
 document.getElementById("btnCalcular").addEventListener("click",calcularBtn);
