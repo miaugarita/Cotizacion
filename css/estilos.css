@@ -1,0 +1,68 @@
+body{
+    margin: 0;
+    font-family: 'Josefin Sans', sans-serif
+}
+
+#Cabecera{
+    height: 90px;
+    width: 100%;
+    background-color: rgb(14, 44, 32);
+    display: flex ;
+    justify-content: center;
+    align-items: center;
+}
+.Encabezado{
+    color: honeydew;
+    
+}
+
+h1{
+    display: flex ;
+    justify-content: center;
+    align-items: center;
+}
+
+#Contenido{
+    
+    width: 500px;
+    background-color: rgb(123, 145, 102);
+    padding: 30px;
+    display: flex;
+    margin: 0 auto;
+    border: solid 3px rgb(14, 44, 32);
+    flex-direction: column;
+    
+}
+
+#btnCalcular{
+    background-color: rgb(14, 44, 32);
+    color: antiquewhite;
+    padding: 10px;
+}
+#btnLimpiar{
+    color: rgb(14, 44, 32);
+    padding: 10px;
+}
+
+label{
+    font-weight: bolder;
+}
+
+
+
+
+#pieNavegacion{
+    height: 60px;
+    background-color: rgb(14, 44, 32);
+    display: flex ;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    border: solid white;
+}
+
+.pieNav{
+    color: rgb(123, 145, 102);
+}
